@@ -75,7 +75,7 @@
             <h2>About Me</h2>
             <div class="line-dec"></div>
             <span
-              >I am 2 year student in SDU.</span
+              ></span
             >
           </div>
           <div class="left-image-post">
