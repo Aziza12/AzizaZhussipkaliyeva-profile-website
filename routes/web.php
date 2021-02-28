@@ -22,3 +22,4 @@ Route::get('about-me', function () {
 Route::get('contact-me', function () {
     return view('contact_me');
 });
+Route::get('/db', 'Users@index');
