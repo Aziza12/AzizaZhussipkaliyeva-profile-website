@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
+use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +25,13 @@ Route::get('contact-me', function () {
     return view('contact_me');
 });
 Route::get('/db', 'Users@index');
+Route::get('post/create', function () {
+    DB::table('post')->insert([
+        'Title' =>'New title',
+        'Body' => 'new body'
+    ]);
+});
+Route::get('post', function () {
+    $post2 = Post::find(1);
+    return $post2;
+});
