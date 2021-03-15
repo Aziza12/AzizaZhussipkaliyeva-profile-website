@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
+use App\Http\Controllers\BlogControllerr;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,7 +32,4 @@ Route::get('post/create', function () {
         'Body' => 'new body'
     ]);
 });
-Route::get('post', function () {
-    $post2 = Post::find(1);
-    return $post2;
-});
+Route::get('post', [BlogControllerr::class, 'index']);
