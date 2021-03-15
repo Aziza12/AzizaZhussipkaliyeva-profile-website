@@ -19,4 +19,13 @@ class BlogControllerr extends Controller
         ]);
         return back();
     }
+    public function get_post($id)
+    {
+      $post=post::find($id); 
+
+      if($post == null)
+        return response(['message'=>'404 Post not found'],404);
+
+      return view('post.detail')->with(['post'=>$post]);
+    }
 }
