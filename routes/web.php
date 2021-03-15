@@ -32,4 +32,8 @@ Route::get('post/create', function () {
         'Body' => 'new body'
     ]);
 });
-Route::get('post', [BlogControllerr::class, 'index']);
+Route::get('post', function () {
+    $post2 = Post::find(1);
+    return $post2;
+});
+Route::get('blog/index',[BlogControllerr::class, 'index']);
