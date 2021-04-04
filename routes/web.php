@@ -25,6 +25,7 @@ Route::get('about-me', function () {
 Route::get('contact-me', function () {
     return view('contact_me');
 });
+
 Route::get('/db', 'Users@index');
 Route::get('post/create', function () {
     DB::table('post')->insert([
@@ -42,3 +43,11 @@ Route::get('blog/create',function(){
 });
 Route::post('blog/create',[BlogControllerr::class, 'store'])->name('add-blog');
 Route::get('post/{id}',[BlogControllerr::class, 'get_post']);
+
+Route::get('/uploadfile','UploadFileController@index');
+Route::post('/uploadfile', 'UploadFileController@showUploadFile');
+
+Route::get('/multiuploads','UploadController@uploadForm');
+Route::post('/multiuploads', 'UploadController@uploadSubmit');
+
+Route::get('mail/send', 'MailController@send');

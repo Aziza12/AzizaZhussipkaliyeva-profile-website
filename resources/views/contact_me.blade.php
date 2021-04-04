@@ -1,3 +1,7 @@
+<?php
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +30,7 @@
 <link rel="stylesheet" href="assets/css/lightbox.css" />
 </head>
 <body>
+
 <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -83,28 +88,27 @@
           <div class="section-heading">
             <h2>Contact Me</h2>
             <div class="line-dec"></div>
-            <span
-              ></span
-            >
+            <span></span>
           </div>
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="" method="post">
+                <form id="contact" action="/multiuploads" method="post">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="" />
+                      </fieldset>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <fieldset>
                         <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
+                          name="surname" type="text" class="form-control" id="surname" placeholder="Your surname..." required=""
                         />
                       </fieldset>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                       <fieldset>
                         <input
                           name="email"
@@ -118,26 +122,7 @@
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
+                        <input type="file" name="file">
                       </fieldset>
                     </div>
                     <div class="col-md-12">
