@@ -42,14 +42,14 @@
               <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
             </div>
             <div class="author-content">
-              <h4>Aziza</h4>
-              <span>my web page</span>
+              <h4>{{_('lang.name')}}</h4>
+              <span>{{_('lang.title')}}</span>
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-              <li><a href="/">About Me</a></li>
-                <li><a href="about-me">My Work</a></li>
-                <li><a href="contact-me">Contact Me</a></li>
+              <li><a href="/">{{_('lang.about.me')}}</a></li>
+                <li><a href="about-me">{{_('lang.about.me')}}</a></li>
+                <li><a href="contact-me">{{_('lang.contactme')}}</a></li>
 
 
               </ul>
@@ -75,9 +75,7 @@
                 </li>
               </ul>
             </div>
-            <div class="copyright-text">
-              <p>Copyright 2019 Reflux Design</p>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -86,7 +84,7 @@
       <section class="section contact-me" data-section="section4">
         <div class="container">
           <div class="section-heading">
-            <h2>Contact Me</h2>
+            <h2>{{_('lang.contactme')}}</h2>
             <div class="line-dec"></div>
             <span></span>
           </div>
@@ -128,7 +126,7 @@
                     <div class="col-md-12">
                       <fieldset>
                         <button type="submit" id="form-submit" class="button">
-                          Send Message
+                          {{_('lang.send')}}
                         </button>
                       </fieldset>
                     </div>

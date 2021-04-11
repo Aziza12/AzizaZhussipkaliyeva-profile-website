@@ -30,15 +30,15 @@
               <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
             </div>
             <div class="author-content">
-              <h4>Aziza</h4>
-              <span>my web page</span>
+              <h4>{{_('lang.name')}}</h4>
+              <span>{{_('lang.title')}}</span>
             </div>
             <nav class="main-nav">
               <ul class="main-menu">
              
-                <li><a href="/">About Me</a></li>
-                <li><a href="about-me">My Work</a></li>
-                <li><a href="contact-me">Contact Me</a></li>
+                <li><a href="/">{{_('lang.aboutme')}}</a></li>
+                <li><a href="about-me">{{_('lang.mywork')}}</a></li>
+                <li><a href="contact-me">{{_('lang.contactMe')}}</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -62,9 +62,6 @@
                 </li>
               </ul>
             </div>
-            <div class="copyright-text">
-              <p>Copyright 2019 Reflux Design</p>
-            </div>
           </div>
         </div>
       </div>
@@ -72,7 +69,7 @@
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>About Me</h2>
+            <h2>{{_('lang.aboutme')}}</h2>
             <div class="line-dec"></div>
             <span
               ></span
@@ -87,12 +84,11 @@
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                  <h4>What i like to do&</h4>
+                  <h4>{{_('lang.text1')}}</h4>
                   <p>
-                    I have many hobbies as art, music video making, photo, dance, sport  and acting. I also trying to balance my education with this activities.
-                  </p>
+                    {{_('lang.text2')}}                  </p>
                   <div class="white-button">
-                    <a href="about-me">Read More</a>
+                    <a href="about-me">{{_('lang.text3')}}</a>
                   </div>
                 </div>
               </div>

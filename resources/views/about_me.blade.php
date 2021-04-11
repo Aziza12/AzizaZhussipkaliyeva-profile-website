@@ -37,14 +37,14 @@
               <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
             </div>
             <div class="author-content">
-              <h4>Aziza</h4>
-              <span>my web page</span>
+              <h4>{{_('lang.name')}}</h4>
+              <span>{{_('lang.title')}}</span>
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-              <li><a href="/">About Me</a></li>
-                <li><a href="about-me">My Work</a></li>
-                <li><a href="contact-me">Contact Me</a></li>
+              <li><a href="/">{{_('lang.aboutme')}}</a></li>
+                <li><a href="about-me">{{_('lang.mywork')}}</a></li>
+                <li><a href="contact-me">{{_('lang.contactme')}}</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -68,9 +68,7 @@
                 </li>
               </ul>
             </div>
-            <div class="copyright-text">
-              <p>Copyright 2019 Reflux Design</p>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -78,7 +76,7 @@
       <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
-            <h2>My Work</h2>
+            <h2>{{_('lang.mywork')}}</h2>
             <div class="line-dec"></div>
             <span
               ></span
@@ -94,7 +92,7 @@
                     checked=""
                     name="isotope-filter"
                   />
-                  <span>all</span></label
+                  <span>{{_('lang.all')}}</span></label
                 >
                 <label
                   ><input
@@ -102,7 +100,7 @@
                     data-type="people"
                     name="isotope-filter"
                   />
-                  <span>winter</span></label
+                  <span>{{_('lang.winter')}}</span></label
                 >
                 <label
                   ><input
@@ -110,7 +108,7 @@
                     data-type="nature"
                     name="isotope-filter"
                   />
-                  <span>summer</span></label
+                  <span>{{_('lang.summer')}}</span></label
                 >
               </form>
               <div class="isotope-box">
@@ -127,7 +125,7 @@
                         data-title="Caption"
                         ><i class="fa fa-search"></i
                       ></a>
-                      <h4>Summer light</h4>
+                      <h4>{{_('lang.summer')}}</h4>
                       <span></span>
                     </figcaption>
                   </figure>
@@ -146,7 +144,7 @@
                         data-title="Caption"
                         ><i class="fa fa-search"></i
                       ></a>
-                      <h4>winter</h4>
+                      <h4>{{_('lag.winter')}}</h4>
                       <span></span>
                     </figcaption>
                   </figure>
@@ -165,7 +163,7 @@
                         data-title="Caption"
                         ><i class="fa fa-search"></i
                       ></a>
-                      <h4>winter</h4>
+                      <h4>{{_('lang.winter')}}</h4>
                       <span></span>
                     </figcaption>
                   </figure>
@@ -184,7 +182,7 @@
                         data-title="Caption"
                         ><i class="fa fa-search"></i
                       ></a>
-                      <h4>Summer Rain</h4>
+                      <h4>{{_('lang.summer')}}</h4>
                       <span></span>
                     </figcaption>
                   </figure>
